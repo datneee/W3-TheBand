@@ -1,0 +1,104 @@
+
+/* PC */
+@media (min-width: 1024px) {
+    
+}
+/* Tablet && Mobie */
+@media (max-width: 1023px) {
+    #nav .subnav a {
+        padding: 8px 12px;
+    }
+    .click-view {
+        padding: 14px 16px;
+    }
+    .contact-info {
+        line-height: 2;
+    }
+    .contact-form .form-control {
+        padding: 15px 8px;
+    }
+    .mt16-sub {
+        padding: 16px 16px;
+        /* fix lỗi trên mobie  */
+        -webkit-appearance: none; 
+    }
+    #footer a {
+        padding: 8px;
+        display: inline-block;
+    }
+    #footer .copyright {
+        font-size: 24px;
+    }
+}
+/* Tablet */
+@media (min-width: 740px ) and (max-width: 1023px) {
+    
+}
+
+/* Mobie */
+@media (max-width: 740px) {
+    #nav {
+        display: block;
+    }
+    #nav .subnav {
+        position: initial;
+        background-color: #333;
+    }
+    #nav > li {
+        display: block;
+    }
+    #nav li a {
+        padding: 1px 24px;
+    }
+    #nav >li:first-child {
+        display: inline-block;
+    }
+    #nav .subnav a{
+        color: #fff;
+        padding: 5px 42px;
+    }
+
+    #mobie-menu {
+        display: block;
+    }
+    #header {
+        overflow: hidden;
+
+    }
+    #header .search-button {
+        display: none;
+    }
+    #content .section-member {
+        display: block;
+    }
+    #content .third-member-section {
+        width: 60%;
+    }
+    .content-section .tour-address {
+        width: 100%;
+    }
+    .check-tour-address {
+        flex-direction: column;
+    }
+    .click-view {
+        width: 100%;
+    }
+    .contact-info {
+        width: 100%;
+        margin-bottom: 16px;
+    }
+    .contact-form {
+        width: 100%;     
+    }
+    .s-col-full {
+        width: 100%;
+        margin: 8px 0px 8px 0px;
+    }
+    .contact-form .form-control {
+        padding-top: 16px;
+        padding-bottom: 16px;
+    }
+    .mt16-sub {
+        width: 100%;
+    }
+}
