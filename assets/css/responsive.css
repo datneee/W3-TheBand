@@ -74,6 +74,9 @@
     #content .third-member-section {
         width: 60%;
     }
+    .text-slide {
+        display: none;
+    }
     .content-section .tour-address {
         width: 100%;
     }

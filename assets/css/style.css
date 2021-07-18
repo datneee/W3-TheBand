@@ -136,32 +136,36 @@ html {
     font-size: 20px;
     line-height: 46px;
 }
-
-#slider {
-    position: relative;
+.slides {  
     margin-top: 46px;
-    padding-top: 50%;
-    background:url('/assets/img/slider1.jpg') top center / cover no-repeat;
-
 }
-.text-content {
+.slide1 {
+    position: relative;
+}
+.slide2 {
+    position: relative;
+}
+.slide3 {
+    position: relative;
+}
+.contents {
+    display: none;
+}
+.text-slide {
+    text-align: center;
     position: absolute;
     color: #fff;
-    bottom: 0;
-    text-align: center;
     bottom: 48px;
     left: 50%;
     transform: translateX(-50%);
     font-weight: 500;
     font-size: 24px;
 }
-.text-supporter {
+.discrip-slide {
     margin-top: 25px;
     font-size: 15px;
     text-shadow: 0 1px #000;
 }
-
-
 #content .content-section {
     width: 800px;
     max-width: 100%;
@@ -334,4 +338,107 @@ html {
 #footer .copyright {
     margin: 15px 0px;
     font-size: 15px;
+}
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, .4);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 20px 0 rgba(0, 0, 0, .6);
+}
+@keyframes modalFadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-140px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.open {
+    display: flex;
+}
+.modal-container {
+    background-color: #fff;
+    width: 80%;
+    position: relative;
+    animation: modalFadeIn ease .4s ;
+}
+.modal-close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: #fff;
+    padding: 8px;
+    cursor: pointer;
+    font-size: 20px;
+}
+.modal-ar {
+    padding: 0 16px;
+}
+.modal__header {
+    background-color: #009688;
+    height: 130px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 30px;
+}
+.modal__content label {
+    width: 100%;
+    display: block;
+    margin: 15px 0;
+}
+.modal__content input {
+    font-size: 16px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    width: 100%;
+}
+.modal__content button {
+    margin: 16px 0;
+    padding: 16px;
+    width: 100%;
+    background-color: #009688;
+    color: #fff;
+    font-size: 15px;
+    border: none;
+}
+.modal__content button:hover {
+    opacity: .8;
+}
+.modal__footer {
+    margin: 16px 0;
+}
+.modal__footer .modal-ar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 15px;
+}
+.modal__footer button {
+    background-color: #f44336;
+    color: #fff;
+    font-size: 15px;
+    border: none;
+    padding: 12px;
+    cursor: pointer;
+    border-radius: 2px ;
+}
+.modal__footer button:hover {
+    opacity: .8;
+}
+.modal__footer-needing {
+    font-size: 15px;
+
+}
+.modal__footer-needing a {
+    color: #2196F3;
 }
